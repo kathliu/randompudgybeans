@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pudgybeans generator</title>
+
+		<link rel="stylesheet" href="stylesheet.css"/ type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript"></script>
+	</head>
+
+	<body>
+		<h1>pudgybeans</h1>
+		<p>Pudgybeans are small jellybean dogs. They like licorice and philosophy.</p>
+
+		<div class="img-container"><img id="picture" src="images/yellowwalking.png"/></div>
+
+		<div class="button-container"><button id="next-pudge-button">another!</button></div>
+
+		<script>
+			var pudgybeans = [
+				"images/yellowwalking.png",
+				"images/bluewalking.png",
+				"images/redwalking.png",
+				"images/greenwalking.png"
+			];
+
+			$(document).ready(function() {
+				function loadImage() {
+					var url = pudgybeans[Math.floor(Math.random()*pudgybeans.length)];
+					$("#picture").attr("src", url);
+				}
+
+				$('#next-pudge-button').click(function() {
+					loadImage();
+				});
+			});
+
+		</script>
+	</body>
+</html>
