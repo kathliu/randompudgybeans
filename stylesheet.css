@@ -1,0 +1,58 @@
+body {
+	/*background-color: cadetblue;*/
+	background-color: #edfaff;
+	padding: 60px;
+}
+
+h1 {
+	/*color: #fff;*/
+	color: cadetblue;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Varela Round', 'Work Sans', sans-serif;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
+p {
+	/*color: #fff;*/
+	color: cadetblue;
+	text-align: center;
+	font-family: 'Varela Round', 'Work Sans', sans-serif;
+}
+
+.img-container {
+	text-align: center;
+}
+
+img {
+	height: 300px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.button-container {
+	text-align: center;
+}
+
+#next-pudge-button {
+	border: none;
+	height: 70px;
+	width: 300px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: 'Varela Round', 'Work Sans', sans-serif;
+	background-color: cadetblue;
+	color: #fff;
+	text-align: center;
+}
+
+#next-pudge-button:active {
+	background-color: lightgray;
+	color: white;
+	text-align: center;
+}
+
+#next-pudge-button:focus {
+	outline: 0;
+}
